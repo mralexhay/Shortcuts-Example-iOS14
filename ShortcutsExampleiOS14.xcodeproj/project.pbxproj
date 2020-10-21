@@ -8,18 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		8C39B7082540269E00DE2F1F /* ShortcutsExampleiOS14App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C39B7072540269E00DE2F1F /* ShortcutsExampleiOS14App.swift */; };
-		8C39B70A2540269E00DE2F1F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C39B7092540269E00DE2F1F /* ContentView.swift */; };
 		8C39B70C254026A100DE2F1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C39B70B254026A100DE2F1F /* Assets.xcassets */; };
 		8C39B70F254026A100DE2F1F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C39B70E254026A100DE2F1F /* Preview Assets.xcassets */; };
+		8C39B7182540295400DE2F1F /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C39B7172540295400DE2F1F /* People.swift */; };
+		8C39B71B254032F900DE2F1F /* PeopleViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C39B71A254032F900DE2F1F /* PeopleViews.swift */; };
+		8C39B71F2540394900DE2F1F /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 8C39B71E2540394900DE2F1F /* Intents.intentdefinition */; };
+		8C39B7282540437300DE2F1F /* GetPeopleIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C39B7272540437300DE2F1F /* GetPeopleIntentHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8C39B7042540269E00DE2F1F /* ShortcutsExampleiOS14.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShortcutsExampleiOS14.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C39B7072540269E00DE2F1F /* ShortcutsExampleiOS14App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutsExampleiOS14App.swift; sourceTree = "<group>"; };
-		8C39B7092540269E00DE2F1F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8C39B70B254026A100DE2F1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C39B70E254026A100DE2F1F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8C39B710254026A100DE2F1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C39B7172540295400DE2F1F /* People.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
+		8C39B71A254032F900DE2F1F /* PeopleViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViews.swift; sourceTree = "<group>"; };
+		8C39B71E2540394900DE2F1F /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
+		8C39B7272540437300DE2F1F /* GetPeopleIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPeopleIntentHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +59,9 @@
 			isa = PBXGroup;
 			children = (
 				8C39B7072540269E00DE2F1F /* ShortcutsExampleiOS14App.swift */,
-				8C39B7092540269E00DE2F1F /* ContentView.swift */,
+				8C39B72E254043B000DE2F1F /* Shortcuts */,
+				8C39B72D2540439500DE2F1F /* Views */,
+				8C39B72C2540438800DE2F1F /* Data */,
 				8C39B70B254026A100DE2F1F /* Assets.xcassets */,
 				8C39B710254026A100DE2F1F /* Info.plist */,
 				8C39B70D254026A100DE2F1F /* Preview Content */,
@@ -67,6 +75,39 @@
 				8C39B70E254026A100DE2F1F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8C39B72B2540437A00DE2F1F /* Intent Handlers */ = {
+			isa = PBXGroup;
+			children = (
+				8C39B7272540437300DE2F1F /* GetPeopleIntentHandler.swift */,
+			);
+			path = "Intent Handlers";
+			sourceTree = "<group>";
+		};
+		8C39B72C2540438800DE2F1F /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				8C39B7172540295400DE2F1F /* People.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		8C39B72D2540439500DE2F1F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8C39B71A254032F900DE2F1F /* PeopleViews.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8C39B72E254043B000DE2F1F /* Shortcuts */ = {
+			isa = PBXGroup;
+			children = (
+				8C39B71E2540394900DE2F1F /* Intents.intentdefinition */,
+				8C39B72B2540437A00DE2F1F /* Intent Handlers */,
+			);
+			path = Shortcuts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +179,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C39B70A2540269E00DE2F1F /* ContentView.swift in Sources */,
+				8C39B7182540295400DE2F1F /* People.swift in Sources */,
 				8C39B7082540269E00DE2F1F /* ShortcutsExampleiOS14App.swift in Sources */,
+				8C39B71F2540394900DE2F1F /* Intents.intentdefinition in Sources */,
+				8C39B7282540437300DE2F1F /* GetPeopleIntentHandler.swift in Sources */,
+				8C39B71B254032F900DE2F1F /* PeopleViews.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
