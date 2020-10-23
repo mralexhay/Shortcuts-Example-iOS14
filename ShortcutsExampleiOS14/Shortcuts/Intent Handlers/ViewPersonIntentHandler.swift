@@ -30,7 +30,7 @@ class ViewPersonIntentHandler: NSObject, ViewPersonIntentHandling {
 	
 	func providePersonOptionsCollection(for intent: ViewPersonIntent, with completion: @escaping (INObjectCollection<ShortcutsPerson>?, Error?) -> Void) {
 		
-		// We'll convert our list of Person in the peopleArray to ShortcutsPeople along with subtitles and images which will be displayed in the shortcuts action's parameter list
+	  // We'll convert our list of Person in the peopleArray to ShortcutsPeople along with subtitles and images which will be displayed in the shortcuts action's parameter list
 		let shortcutsPeople: [ShortcutsPerson] = peopleArray.map { person in
 			let shortcutsPerson = ShortcutsPerson(identifier: nil,
 												  display: person.name,
