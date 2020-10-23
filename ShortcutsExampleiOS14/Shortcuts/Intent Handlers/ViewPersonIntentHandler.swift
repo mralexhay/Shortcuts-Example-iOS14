@@ -6,7 +6,6 @@
 //
 
 import Intents
-import UIKit
 
 class ViewPersonIntentHandler: NSObject, ViewPersonIntentHandling {
 	func resolvePerson(for intent: ViewPersonIntent, with completion: @escaping (ViewPersonPersonResolutionResult) -> Void) {
