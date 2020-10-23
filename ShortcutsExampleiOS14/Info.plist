@@ -23,12 +23,14 @@
 	<key>INIntentsSupported</key>
 	<array>
 		<string>GetPeopleIntent</string>
+		<string>ViewPersonIntent</string>
 	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSUserActivityTypes</key>
 	<array>
 		<string>GetPeopleIntent</string>
+		<string>ViewPersonIntent</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>

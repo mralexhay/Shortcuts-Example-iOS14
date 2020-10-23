@@ -8,7 +8,7 @@
 import SwiftUI
 import UIKit
 
-struct Person {
+struct Person: Identifiable {
 	var id: Int
 	var name: String
 	var job: String

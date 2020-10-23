@@ -11,11 +11,11 @@ struct PeopleListView: View {
 	
 	var people = peopleArray
 	
-    var body: some View {
+	var body: some View {
 		NavigationView {
 			List(people, id: \.id) { person in
 				NavigationLink(
-					destination: PersonDetailView(person: person),
+					destination: PersonDetailView(person: person, note: .constant("")), // Adding in a constant empty string here
 					label: {
 						Label(title: {
 							VStack(alignment: .leading) {
@@ -31,31 +31,44 @@ struct PeopleListView: View {
 			}
 			.navigationBarTitle("People")
 		}
-       
-    }
+		
+	}
 }
 
 struct PersonDetailView: View {
 	
 	var person: Person
+	@Binding var note: String
 	
 	var body: some View {
-		VStack {
-			Image(systemName: person.iconName)
-				.font(Font.system(size: 100))
-				
-			Text(person.job)
-				.font(.callout)
-				.navigationBarTitle(person.name)
-				.padding(.top)
+		List {
+			HStack {
+				Text("Job")
+					.foregroundColor(.secondary)
+				Spacer()
+				Text(person.job)
+			}
+			HStack {
+				Text("Icon")
+					.foregroundColor(.secondary)
+				Spacer()
+				Image(systemName: person.iconName)
+			}
+			if note != "" {
+				HStack {
+					Text("Note")
+						.foregroundColor(.secondary)
+					Spacer()
+					Text(note)
+				}
+			}
 		}
-		.padding()
-		Spacer()
+		.navigationBarTitle(person.name)
 	}
 }
 
 struct PeopleViews_Previews: PreviewProvider {
-    static var previews: some View {
-        PeopleListView()
-    }
+	static var previews: some View {
+		PeopleListView()
+	}
 }

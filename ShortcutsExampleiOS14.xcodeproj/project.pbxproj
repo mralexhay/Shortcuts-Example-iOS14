@@ -14,6 +14,7 @@
 		8C39B71B254032F900DE2F1F /* PeopleViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C39B71A254032F900DE2F1F /* PeopleViews.swift */; };
 		8C39B71F2540394900DE2F1F /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 8C39B71E2540394900DE2F1F /* Intents.intentdefinition */; };
 		8C39B7282540437300DE2F1F /* GetPeopleIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C39B7272540437300DE2F1F /* GetPeopleIntentHandler.swift */; };
+		8C39B73B2540A6F900DE2F1F /* ViewPersonIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C39B73A2540A6F900DE2F1F /* ViewPersonIntentHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		8C39B71A254032F900DE2F1F /* PeopleViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViews.swift; sourceTree = "<group>"; };
 		8C39B71E2540394900DE2F1F /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
 		8C39B7272540437300DE2F1F /* GetPeopleIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPeopleIntentHandler.swift; sourceTree = "<group>"; };
+		8C39B73A2540A6F900DE2F1F /* ViewPersonIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPersonIntentHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				8C39B7272540437300DE2F1F /* GetPeopleIntentHandler.swift */,
+				8C39B73A2540A6F900DE2F1F /* ViewPersonIntentHandler.swift */,
 			);
 			path = "Intent Handlers";
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 			files = (
 				8C39B7182540295400DE2F1F /* People.swift in Sources */,
 				8C39B7082540269E00DE2F1F /* ShortcutsExampleiOS14App.swift in Sources */,
+				8C39B73B2540A6F900DE2F1F /* ViewPersonIntentHandler.swift in Sources */,
 				8C39B71F2540394900DE2F1F /* Intents.intentdefinition in Sources */,
 				8C39B7282540437300DE2F1F /* GetPeopleIntentHandler.swift in Sources */,
 				8C39B71B254032F900DE2F1F /* PeopleViews.swift in Sources */,
